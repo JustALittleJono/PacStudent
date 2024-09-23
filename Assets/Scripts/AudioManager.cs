@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource normalGhostsAudioSource;
     public AudioSource scaredGhostsAudioSource;
     public AudioSource deadGhostsAudioSource;
+    private bool introPlaying = true;
     
     void Start()
     {
@@ -17,6 +18,26 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(PlayNormalGhostsMusicAfterIntro());
     }
 
+    
+    void Update()
+    {
+        // Check if any key is pressed and if intro music is still playing
+        if (Input.anyKeyDown && introPlaying)
+        {
+            SkipIntro();
+        }
+    }
+    
+    void SkipIntro()
+    {
+        // Stop the intro music immediately
+        introAudioSource.Stop();
+        introPlaying = false;
+
+        // Start playing the normal ghost music
+        normalGhostsAudioSource.Play();
+    }
+    
     IEnumerator PlayNormalGhostsMusicAfterIntro()
     {
         yield return new WaitForSeconds(introAudioSource.clip.length);
