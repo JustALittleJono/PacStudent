@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 31207040a323b9f43ad29db04de5bd34
+guid: d7fdb88de0658e949b88313b159c66ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5899927303015767666
-    second: Ghost_0
+      213: 7822223973461430663
+    second: Ghost 'Ghost' dead_0
   - first:
-      213: 6824852377700625651
-    second: Ghost_1
+      213: 6231049516836503715
+    second: Ghost 'Ghost' dead_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -168,13 +168,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost_0
+      name: Ghost 'Ghost' dead_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 99
-        width: 32
-        height: 26
+        width: 18
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e81ed17806f3f1ea0800000000000000
-      internalID: -5899927303015767666
+      spriteID: 78196bb824f1e8c60800000000000000
+      internalID: 7822223973461430663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost_1
+      name: Ghost 'Ghost' dead_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 135
         y: 99
-        width: 32
-        height: 26
+        width: 18
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fc6351f31fb6be50800000000000000
-      internalID: 6824852377700625651
+      spriteID: 3a0c8e4a582297650800000000000000
+      internalID: 6231049516836503715
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 02ca5244debbaa74091322faf2b7ddca
+    spriteID: 874a22ef8238d3b4b80f7b8a785f916a
     internalID: 0
     vertices: []
     indices: 
@@ -220,9 +220,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost_0: -5899927303015767666
-      Ghost_1: 6824852377700625651
-      Ghost_2: 557573723
+      Ghost 'Ghost' dead_0: 7822223973461430663
+      Ghost 'Ghost' dead_1: 6231049516836503715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
