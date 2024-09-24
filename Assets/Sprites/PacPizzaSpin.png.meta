@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -177,12 +177,12 @@ TextureImporter:
       name: PacPizzaSpin_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 227
-        width: 26
-        height: 26
+        x: 4
+        y: 228
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: PacPizzaSpin_1
       rect:
         serializedVersion: 2
-        x: 131
-        y: 227
-        width: 26
-        height: 26
+        x: 132
+        y: 228
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: PacPizzaSpin_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 99
-        width: 26
-        height: 26
+        x: 4
+        y: 100
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: PacPizzaSpin_3
       rect:
         serializedVersion: 2
-        x: 131
-        y: 99
-        width: 26
-        height: 26
+        x: 132
+        y: 100
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,14 +260,18 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dac104e2928d64f4baa012857abeecb4
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PacPizzaSpin_0: 9051622891729299604
+      PacPizzaSpin_1: -1348248366465204954
+      PacPizzaSpin_2: 1530086842765938197
+      PacPizzaSpin_3: 1117353393166806825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

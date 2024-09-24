@@ -7,11 +7,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: Ghost
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5412511284402158005}
-    m_Position: {x: 200, y: 0, z: 0}
+    m_Position: {x: 190, y: 60, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -30,10 +30,16 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Ghost_Color
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: Dir
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 1
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: Ghost
     m_StateMachine: {fileID: -6894554985029936619}
     m_Mask: {fileID: 0}
     m_Motions: []
