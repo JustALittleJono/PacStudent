@@ -213,11 +213,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost Eyes_0
+      name: Eyes Up_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 356
+        y: 355
         width: 32
         height: 26
       alignment: 0
@@ -225,20 +225,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 71d0a11071b110c50800000000000000
-      internalID: 6629609912082763031
+      spriteID: 10bc580c0f305d043b685655f19c925c
+      internalID: 284541821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost Eyes_10
+      name: Eyes Up_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 356
+        x: 0
+        y: 227
         width: 32
         height: 26
       alignment: 0
@@ -246,10 +246,136 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5c9e17fce4a3ae9c0800000000000000
-      internalID: -3897238417373533755
+      spriteID: ca9b22e7b8a605745adc03b2de5fa096
+      internalID: -1108384261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes Up_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b569d66cb6a0547999c2d2b09d272f
+      internalID: -722043217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes Up_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 99
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ada21b0214a0947ad1ba8b813860d7
+      internalID: 1925183879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes Up_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 355
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33402390ce5a4644a5a7c730663932b
+      internalID: 2056052663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes Up_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 227
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2386d002c24b9ec41884a24fdc3da69b
+      internalID: -917081234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes Up_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 227
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6440f94e94d1d3740a6bc4377658e12a
+      internalID: 375201560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eyes Up_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 355
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6a479521d36984cb960112ac0e1313
+      internalID: -1446918366
       vertices: []
       indices: 
       edges: []
@@ -265,23 +391,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost Eyes_0: 6629609912082763031
-      Ghost Eyes_1: 1467204193429611432
-      Ghost Eyes_10: -3897238417373533755
-      Ghost Eyes_11: -785146565170706534
-      Ghost Eyes_12: 3260199614274546502
-      Ghost Eyes_13: 333247055982702992
-      Ghost Eyes_14: -2457284798753895050
-      Ghost Eyes_15: -6655981848453818452
-      Ghost Eyes_16: 7865617475007838224
-      Ghost Eyes_2: 1397880738766844573
-      Ghost Eyes_3: 6056030855004914379
-      Ghost Eyes_4: 1066365889566714641
-      Ghost Eyes_5: 3524698312751820041
-      Ghost Eyes_6: 5776610957638524791
-      Ghost Eyes_7: -910511859254365554
-      Ghost Eyes_8: 207809567202180303
-      Ghost Eyes_9: 889684508517897828
+      Eyes Up_0: 284541821
+      Eyes Up_1: 879200018
+      Eyes Up_10: -917081234
+      Eyes Up_11: 10112835
+      Eyes Up_12: 375201560
+      Eyes Up_13: -167826389
+      Eyes Up_14: -1446918366
+      Eyes Up_15: -1182996672
+      Eyes Up_16: -1826858027
+      Eyes Up_2: -1108384261
+      Eyes Up_3: -573768086
+      Eyes Up_4: -722043217
+      Eyes Up_5: -257611548
+      Eyes Up_6: 1925183879
+      Eyes Up_7: 1436046501
+      Eyes Up_8: 2056052663
+      Eyes Up_9: 1031519386
+      Eyes_0: -404586185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
