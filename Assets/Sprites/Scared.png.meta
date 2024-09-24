@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: d7fdb88de0658e949b88313b159c66ae
+guid: 101cbabb0ff37b540b5aaa1077721c30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7822223973461430663
-    second: Ghost 'Ghost' dead_0
+      213: -1161310907027267080
+    second: '''Ghost''_0'
   - first:
-      213: 6231049516836503715
-    second: Ghost 'Ghost' dead_1
+      213: -1845484152207514996
+    second: '''Ghost''_1'
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,13 +50,13 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -168,13 +168,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost 'Ghost' dead_0
+      name: '''Ghost''_0'
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 99
-        width: 18
-        height: 23
+        width: 32
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78196bb824f1e8c60800000000000000
-      internalID: 7822223973461430663
+      spriteID: 8f16ad802e132efe0800000000000000
+      internalID: -1161310907027267080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost 'Ghost' dead_1
+      name: '''Ghost''_1'
       rect:
         serializedVersion: 2
-        x: 135
+        x: 128
         y: 99
-        width: 18
-        height: 22
+        width: 32
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a0c8e4a582297650800000000000000
-      internalID: 6231049516836503715
+      spriteID: c82ee0df0f58366e0800000000000000
+      internalID: -1845484152207514996
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 874a22ef8238d3b4b80f7b8a785f916a
+    spriteID: 8ffb31115c572cf46ae94fcd190e33bc
     internalID: 0
     vertices: []
     indices: 
@@ -220,8 +220,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost 'Ghost' dead_0: 7822223973461430663
-      Ghost 'Ghost' dead_1: 6231049516836503715
+      '''Ghost''_0': -1161310907027267080
+      '''Ghost''_1': -1845484152207514996
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
