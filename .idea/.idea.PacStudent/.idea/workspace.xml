@@ -5,37 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9707fbb8-bd6b-4a02-8c8e-171d343ae2a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Down.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Down.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Left.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Left.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Left.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Left.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Left.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Right.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Right.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Right.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Right.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Right.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Up.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Up.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Up.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Up.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Up.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Ghost Anim.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Ghost Anim.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Ghost_Color.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Ghost_Color.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Ghost_Controller.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Ghost_Controller.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Scared.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Scared.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Eyes.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Eyes.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ghost_Type.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ghost_Type.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rotation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rotation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eye Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eye Controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Ghost Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Ghost Controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GhostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GhostController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Eyes Up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Eyes Up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tesst.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tesst.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +24,27 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GhostController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/tesst.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rotation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2mVpW6kH5sCjrXjWief0KRFWrdo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.6309859",
     "git-widget-placeholder": "Feature-Visual",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -102,10 +86,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="31972">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="31972" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -121,7 +105,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727171628557</updated>
-      <workItem from="1727171629189" duration="7576000" />
+      <workItem from="1727171629189" duration="8187000" />
+      <workItem from="1727245595480" duration="1453000" />
     </task>
     <servers />
   </component>
@@ -136,6 +121,7 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
