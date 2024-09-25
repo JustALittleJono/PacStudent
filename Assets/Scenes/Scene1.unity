@@ -1172,7 +1172,7 @@ MonoBehaviour:
   pelletPrefab: {fileID: 9044055661869542238, guid: cdcb721e284731c4984b7c0b78fb62ca, type: 3}
   powerPelletPrefab: {fileID: 6386806527570339118, guid: 9d66cf6e0fa47e343a10619409ccbb39, type: 3}
   tJunctionPrefab: {fileID: 1721307045853073328, guid: 5f9a253f6a3c09c4fad3923348dc484e, type: 3}
-  startPosition: {x: -7, y: 7}
+  startPosition: {x: 0, y: 0}
   tileSize: 1
 --- !u!1 &1422685764
 GameObject:

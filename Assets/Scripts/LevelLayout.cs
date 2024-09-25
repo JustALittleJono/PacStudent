@@ -45,22 +45,22 @@ public class LevelLayout : MonoBehaviour
         for (var y = 0; y < levelMap.GetLength(0); y++)
         for (var x = 0; x < levelMap.GetLength(1); x++)
         {
-            int rightNeighbor = 0;
-            int leftNeighbor = 0;
-            int aboveNeighbor = 0;
-            int belowNeighbor = 0;
+            int rightNeighbor = -1;
+            int leftNeighbor = -1;
+            int aboveNeighbor = -1;
+            int belowNeighbor = -1;
             var position = startPosition + new Vector2(x * tileSize, -y * tileSize);
             var tileType = levelMap[y, x];
             
             if (x+1 < levelMap.GetLength(1))
             {rightNeighbor = levelMap[y, x+1];}
-            if (x-1 >= 0)
-            {leftNeighbor = levelMap[y, x-1];}
-            
-            if (y-1 >= 0)
-            {aboveNeighbor = levelMap[y-1, x];}
             if (y+1 < levelMap.GetLength(0))
             {belowNeighbor = levelMap[y+1, x];}
+            if (x-1 >= 0)
+            {leftNeighbor = levelMap[y, x-1];}
+            if (y-1 >= 0)
+            {aboveNeighbor = levelMap[y-1, x];}
+            
             
             GameObject tilePrefab = null;
 
@@ -137,22 +137,48 @@ public class LevelLayout : MonoBehaviour
                 // Handle rotation for inside corners
                 if (tileType == 3) // Inside Corner
                 {
-                    if (rightNeighbor != 3 && rightNeighbor != 4)
+                    if (rightNeighbor == 3 || rightNeighbor == 4)
                     {
-                        tileInstance.transform.rotation = Quaternion.Euler(0, 0, 270); // Rotate 90 degrees
-                        if (aboveNeighbor == 3 ||  aboveNeighbor == 4)
+                        if (aboveNeighbor == 3 ||  aboveNeighbor == 4 || aboveNeighbor == 7 )
                         {
-                            tileInstance.transform.rotation = Quaternion.Euler(0, 0, 180); // Rotate 180 degrees
+                            tileInstance.transform.rotation = Quaternion.Euler(0, 0, 90); // Rotate 180 degrees
                         }
                     }
-
-                    if (aboveNeighbor == 3 && (belowNeighbor == 3 || belowNeighbor == 4))
+                    
+                    if (leftNeighbor == 3 || leftNeighbor == 4)
                     {
-                        tileInstance.transform.rotation = Quaternion.Euler(0, 0, 90);
-                        if (belowNeighbor == 3)
+                        tileInstance.transform.rotation = Quaternion.Euler(0, 0, 270);
+                        if (aboveNeighbor == 3 || aboveNeighbor == 4 || aboveNeighbor == 7)
                         {
-                            tileInstance.transform.rotation = Quaternion.Euler(0, 0, 270);
+                            tileInstance.transform.rotation = Quaternion.Euler(0, 0, 180);
                         }
+                    }
+                    
+                    if (aboveNeighbor == 3 || aboveNeighbor == 4 || aboveNeighbor == 7)
+                    {
+                        if (rightNeighbor != 3 && rightNeighbor != 4)
+                        { tileInstance.transform.rotation = Quaternion.Euler(0, 0, 180); }
+
+                        if (belowNeighbor == 4)
+                        {
+                            tileInstance.transform.rotation = Quaternion.Euler(0, 0, 90);
+
+                            if (aboveNeighbor == 4 && leftNeighbor == 4)
+                            {
+                                tileInstance.transform.rotation = Quaternion.Euler(0, 0, 270);
+                            }
+                            
+                            if (aboveNeighbor == 3 && leftNeighbor == 4)
+                            {
+                                tileInstance.transform.rotation = Quaternion.Euler(0, 0, 0);
+                            }
+                        }
+                        else if (belowNeighbor == 3 && leftNeighbor == 4)
+                        {
+                            tileInstance.transform.rotation = Quaternion.Euler(0, 0, 90);
+                        }
+                        else if (rightNeighbor == -1)
+                        { tileInstance.transform.rotation = Quaternion.Euler(0, 0, 90); }
                     }
                 }
 
