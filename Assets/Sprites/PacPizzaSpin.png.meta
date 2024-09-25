@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 31207040a323b9f43ad29db04de5bd34
+guid: 2faa6099ded58a544bdf689cb55f9548
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5899927303015767666
-    second: Ghost_0
+      213: 9051622891729299604
+    second: PacPizzaSpin_0
   - first:
-      213: 6824852377700625651
-    second: Ghost_1
+      213: -1348248366465204954
+    second: PacPizzaSpin_1
+  - first:
+      213: 1530086842765938197
+    second: PacPizzaSpin_2
+  - first:
+      213: 1117353393166806825
+    second: PacPizzaSpin_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,11 +56,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -168,43 +174,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost_0
+      name: PacPizzaSpin_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 99
-        width: 32
-        height: 26
+        x: 4
+        y: 228
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e81ed17806f3f1ea0800000000000000
-      internalID: -5899927303015767666
+      spriteID: 498a15eff03dd9d70800000000000000
+      internalID: 9051622891729299604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost_1
+      name: PacPizzaSpin_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 99
-        width: 32
-        height: 26
+        x: 132
+        y: 228
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fc6351f31fb6be50800000000000000
-      internalID: 6824852377700625651
+      spriteID: 62d37d7014f0a4de0800000000000000
+      internalID: -1348248366465204954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacPizzaSpin_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e009270e5fb3510800000000000000
+      internalID: 1530086842765938197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacPizzaSpin_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 100
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fe848bdf2a18f00800000000000000
+      internalID: 1117353393166806825
       vertices: []
       indices: 
       edges: []
@@ -212,7 +260,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b17e1ab6cf675040b20dbb6a4cfa478
+    spriteID: dac104e2928d64f4baa012857abeecb4
     internalID: 0
     vertices: []
     indices: 
@@ -220,8 +268,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost_0: -5899927303015767666
-      Ghost_1: 6824852377700625651
+      PacPizzaSpin_0: 9051622891729299604
+      PacPizzaSpin_1: -1348248366465204954
+      PacPizzaSpin_2: 1530086842765938197
+      PacPizzaSpin_3: 1117353393166806825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 31207040a323b9f43ad29db04de5bd34
+guid: cf43bf2f70ebd044fa5a265dd18724bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5899927303015767666
-    second: Ghost_0
-  - first:
-      213: 6824852377700625651
-    second: Ghost_1
+      213: -3020247847154276312
+    second: PacCounter_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -168,13 +165,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost_0
+      name: PacCounter_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 99
-        width: 32
-        height: 26
+        x: 6
+        y: 100
+        width: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,29 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e81ed17806f3f1ea0800000000000000
-      internalID: -5899927303015767666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ghost_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 99
-        width: 32
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fc6351f31fb6be50800000000000000
-      internalID: 6824852377700625651
+      spriteID: 8282bb0c59ce516d0800000000000000
+      internalID: -3020247847154276312
       vertices: []
       indices: 
       edges: []
@@ -212,7 +188,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b17e1ab6cf675040b20dbb6a4cfa478
+    spriteID: e37b5fe71e5e23c40a94cdef19c01a3d
     internalID: 0
     vertices: []
     indices: 
@@ -220,8 +196,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost_0: -5899927303015767666
-      Ghost_1: 6824852377700625651
+      PacCounter_0: -3020247847154276312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

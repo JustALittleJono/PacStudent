@@ -1,13 +1,58 @@
 fileFormatVersion: 2
-guid: 31207040a323b9f43ad29db04de5bd34
+guid: bb7afb4be5dfb824e8a0f3fc09e0df93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5899927303015767666
-    second: Ghost_0
+      213: 6629609912082763031
+    second: Ghost Eyes_0
   - first:
-      213: 6824852377700625651
-    second: Ghost_1
+      213: 1467204193429611432
+    second: Ghost Eyes_1
+  - first:
+      213: 1397880738766844573
+    second: Ghost Eyes_2
+  - first:
+      213: 6056030855004914379
+    second: Ghost Eyes_3
+  - first:
+      213: 1066365889566714641
+    second: Ghost Eyes_4
+  - first:
+      213: 3524698312751820041
+    second: Ghost Eyes_5
+  - first:
+      213: 5776610957638524791
+    second: Ghost Eyes_6
+  - first:
+      213: -910511859254365554
+    second: Ghost Eyes_7
+  - first:
+      213: 207809567202180303
+    second: Ghost Eyes_8
+  - first:
+      213: 889684508517897828
+    second: Ghost Eyes_9
+  - first:
+      213: -3897238417373533755
+    second: Ghost Eyes_10
+  - first:
+      213: -785146565170706534
+    second: Ghost Eyes_11
+  - first:
+      213: 3260199614274546502
+    second: Ghost Eyes_12
+  - first:
+      213: 333247055982702992
+    second: Ghost Eyes_13
+  - first:
+      213: -2457284798753895050
+    second: Ghost Eyes_14
+  - first:
+      213: -6655981848453818452
+    second: Ghost Eyes_15
+  - first:
+      213: 7865617475007838224
+    second: Ghost Eyes_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -168,43 +213,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost_0
+      name: Ghost Eyes_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 99
+        x: 128
+        y: 100
         width: 32
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e81ed17806f3f1ea0800000000000000
-      internalID: -5899927303015767666
+      spriteID: d92fe882025466310800000000000000
+      internalID: 1397880738766844573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost_1
+      name: Ghost Eyes_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 99
+        x: 0
+        y: 98
         width: 32
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fc6351f31fb6be50800000000000000
-      internalID: 6824852377700625651
+      spriteID: 11ba730702e7cce00800000000000000
+      internalID: 1066365889566714641
       vertices: []
       indices: 
       edges: []
@@ -212,7 +257,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b17e1ab6cf675040b20dbb6a4cfa478
+    spriteID: d7beeac32ffc5524fa2881fbba3c65ac
     internalID: 0
     vertices: []
     indices: 
@@ -220,8 +265,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost_0: -5899927303015767666
-      Ghost_1: 6824852377700625651
+      Ghost Eyes_0: 6629609912082763031
+      Ghost Eyes_1: 1467204193429611432
+      Ghost Eyes_10: -3897238417373533755
+      Ghost Eyes_11: -785146565170706534
+      Ghost Eyes_12: 3260199614274546502
+      Ghost Eyes_13: 333247055982702992
+      Ghost Eyes_14: -2457284798753895050
+      Ghost Eyes_15: -6655981848453818452
+      Ghost Eyes_16: 7865617475007838224
+      Ghost Eyes_2: 1397880738766844573
+      Ghost Eyes_3: 6056030855004914379
+      Ghost Eyes_4: 1066365889566714641
+      Ghost Eyes_5: 3524698312751820041
+      Ghost Eyes_6: 5776610957638524791
+      Ghost Eyes_7: -910511859254365554
+      Ghost Eyes_8: 207809567202180303
+      Ghost Eyes_9: 889684508517897828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

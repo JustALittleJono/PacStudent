@@ -1,13 +1,31 @@
 fileFormatVersion: 2
-guid: 31207040a323b9f43ad29db04de5bd34
+guid: 695bbf62584da2943a56c7170cebc8f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5899927303015767666
-    second: Ghost_0
+      213: -8453372839322644852
+    second: PacMonster_0
   - first:
-      213: 6824852377700625651
-    second: Ghost_1
+      213: -9074463510113813134
+    second: PacMonster_1
+  - first:
+      213: 3420481704376314317
+    second: PacMonster_2
+  - first:
+      213: -4448045204729840999
+    second: PacMonster_3
+  - first:
+      213: 832879928610660976
+    second: PacMonster_4
+  - first:
+      213: -6160645492384859920
+    second: PacMonster_5
+  - first:
+      213: 6930328709586337288
+    second: PacMonster_6
+  - first:
+      213: 6965336691639106306
+    second: PacMonster_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -56,7 +74,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -168,43 +186,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost_0
+      name: PacMonster_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 99
+        y: 352
         width: 32
-        height: 26
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e81ed17806f3f1ea0800000000000000
-      internalID: -5899927303015767666
+      spriteID: c8e0d36c0369faa80800000000000000
+      internalID: -8453372839322644852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost_1
+      name: PacMonster_1
       rect:
         serializedVersion: 2
         x: 128
-        y: 99
+        y: 352
         width: 32
-        height: 26
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fc6351f31fb6be50800000000000000
-      internalID: 6824852377700625651
+      spriteID: 27dfb602487011280800000000000000
+      internalID: -9074463510113813134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMonster_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9a216dcfdf77f20800000000000000
+      internalID: 3420481704376314317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMonster_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ab23bf37e5542c0800000000000000
+      internalID: -4448045204729840999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMonster_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072246dd1ebfe8b00800000000000000
+      internalID: 832879928610660976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMonster_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8f94fa09df08aa0800000000000000
+      internalID: -6160645492384859920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMonster_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80eb59f2e397d2060800000000000000
+      internalID: 6930328709586337288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMonster_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bb42e21d8d9a060800000000000000
+      internalID: 6965336691639106306
       vertices: []
       indices: 
       edges: []
@@ -212,7 +356,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b17e1ab6cf675040b20dbb6a4cfa478
+    spriteID: 3ef10c3036a4b81428bb33496628fa94
     internalID: 0
     vertices: []
     indices: 
@@ -220,8 +364,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost_0: -5899927303015767666
-      Ghost_1: 6824852377700625651
+      PacMonster_0: -8453372839322644852
+      PacMonster_1: -9074463510113813134
+      PacMonster_2: 3420481704376314317
+      PacMonster_3: -4448045204729840999
+      PacMonster_4: 832879928610660976
+      PacMonster_5: -6160645492384859920
+      PacMonster_6: 6930328709586337288
+      PacMonster_7: 6965336691639106306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

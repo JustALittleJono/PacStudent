@@ -1,31 +1,49 @@
 fileFormatVersion: 2
-guid: 21e80a1f5d8f31f43ae72c705dacc46b
+guid: 7f971aa089efa654e9a237f043e333b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7271281536500522788
-    second: Hungry Hungry Pillmonster_0
+      213: 40288921120601639
+    second: PacMap_0
   - first:
-      213: 7514421274290703644
-    second: Hungry Hungry Pillmonster_1
+      213: 3196557570712499286
+    second: PacMap_1
   - first:
-      213: 5203915705940750201
-    second: Hungry Hungry Pillmonster_2
+      213: -7471029488988740464
+    second: PacMap_2
   - first:
-      213: 8748701812828896686
-    second: Hungry Hungry Pillmonster_3
+      213: 5539068914564409722
+    second: PacMap_3
   - first:
-      213: -6471262929214718110
-    second: Hungry Hungry Pillmonster_4
+      213: -5037206393306007928
+    second: PacMap_4
   - first:
-      213: 339248216316288655
-    second: Hungry Hungry Pillmonster_5
+      213: 2488564778540862959
+    second: PacMap_5
   - first:
-      213: 1750448445588939040
-    second: Hungry Hungry Pillmonster_6
+      213: 6661137021291792706
+    second: PacMap_6
   - first:
-      213: 4416161006157432128
-    second: Hungry Hungry Pillmonster_7
+      213: 6848978868774435531
+    second: PacMap_7
+  - first:
+      213: -1938178342735375605
+    second: PacMap_8
+  - first:
+      213: -700470612484491691
+    second: PacMap_9
+  - first:
+      213: 7767696666620513511
+    second: PacMap_10
+  - first:
+      213: -4258965728668212287
+    second: PacMap_11
+  - first:
+      213: -3126247179624374242
+    second: PacMap_12
+  - first:
+      213: -9135296866814761966
+    second: PacMap_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -68,7 +86,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -95,8 +113,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 16384
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -186,181 +204,274 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_0
+      name: PacMap_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 356
-        width: 27
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 13.5, y: -7}
-        - {x: 13.5, y: 7}
-        - {x: 8.5, y: 12}
-        - {x: -5.5, y: 12}
-        - {x: -9.5, y: 8}
-        - {x: -11.5, y: 7}
-        - {x: -13.5, y: 4}
-        - {x: -13.5, y: -6}
-        - {x: -11.5, y: -8}
-        - {x: -9.5, y: -8}
-        - {x: -5.5, y: -12}
-        - {x: 8.5, y: -12}
-      physicsShape: []
-      tessellationDetail: 1
-      bones: []
-      spriteID: 42f58f45808c8e460800000000000000
-      internalID: 7271281536500522788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_1
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 356
-        width: 26
-        height: 24
+        x: 0
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c1d4cbaf556984860800000000000000
-      internalID: 7514421274290703644
+      spriteID: 726f6cf6f822f8000800000000000000
+      internalID: 40288921120601639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_2
+      name: PacMap_1
       rect:
         serializedVersion: 2
-        x: 259
-        y: 356
-        width: 26
-        height: 24
+        x: 128
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 97faca553c5083840800000000000000
-      internalID: 5203915705940750201
+      spriteID: 654776aac247c5c20800000000000000
+      internalID: 3196557570712499286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_3
+      name: PacMap_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 228
-        width: 26
-        height: 24
+        x: 256
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ead7b7732f1a96970800000000000000
-      internalID: 8748701812828896686
+      spriteID: 094ab525342915890800000000000000
+      internalID: -7471029488988740464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_4
+      name: PacMap_3
       rect:
         serializedVersion: 2
-        x: 129
-        y: 228
-        width: 28
-        height: 24
+        x: 384
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 26fb000f6a47136a0800000000000000
-      internalID: -6471262929214718110
+      spriteID: a79250f94d9bedc40800000000000000
+      internalID: 5539068914564409722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_5
+      name: PacMap_4
       rect:
         serializedVersion: 2
-        x: 258
-        y: 228
-        width: 27
-        height: 24
+        x: 0
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8e9730947045b400800000000000000
-      internalID: 339248216316288655
+      spriteID: 8863baa397f381ab0800000000000000
+      internalID: -5037206393306007928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_6
+      name: PacMap_5
       rect:
         serializedVersion: 2
-        x: 1
-        y: 100
-        width: 28
-        height: 24
+        x: 128
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 021a6f44697da4810800000000000000
-      internalID: 1750448445588939040
+      spriteID: fed0a792b78298220800000000000000
+      internalID: 2488564778540862959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hungry Hungry Pillmonster_7
+      name: PacMap_6
       rect:
         serializedVersion: 2
-        x: 130
-        y: 100
-        width: 27
-        height: 24
+        x: 256
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 04502fa890b594d30800000000000000
-      internalID: 4416161006157432128
+      spriteID: 2490d4224dc117c50800000000000000
+      internalID: 6661137021291792706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMap_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcaf4736ef57c0f50800000000000000
+      internalID: 6848978868774435531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMap_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556f24f60bd6746f0800000000000000
+      internalID: -700470612484491691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMap_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecc6e896f66ccb60800000000000000
+      internalID: 7767696666620513511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMap_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c32b281c3d15e4c0800000000000000
+      internalID: -4258965728668212287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMap_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e102c62f0c65d94d0800000000000000
+      internalID: -3126247179624374242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacMap_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21464c786e7e83180800000000000000
+      internalID: -9135296866814761966
       vertices: []
       indices: 
       edges: []
@@ -368,7 +479,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 40796eb9760f7ae4ab5476a6adaa83ae
+    spriteID: b60f71c43ae07e04fb37e405b3440073
     internalID: 0
     vertices: []
     indices: 
@@ -376,15 +487,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hungry Hungry Pillmonster_0: 7271281536500522788
-      Hungry Hungry Pillmonster_1: 7514421274290703644
-      Hungry Hungry Pillmonster_2: 5203915705940750201
-      Hungry Hungry Pillmonster_3: 8748701812828896686
-      Hungry Hungry Pillmonster_4: -6471262929214718110
-      Hungry Hungry Pillmonster_5: 339248216316288655
-      Hungry Hungry Pillmonster_6: 1750448445588939040
-      Hungry Hungry Pillmonster_7: 4416161006157432128
-      Hungry Hungry Pillmonster_8: 742774345
+      PacMap_0: 40288921120601639
+      PacMap_1: 3196557570712499286
+      PacMap_10: 7767696666620513511
+      PacMap_11: -4258965728668212287
+      PacMap_12: -3126247179624374242
+      PacMap_13: -9135296866814761966
+      PacMap_2: -7471029488988740464
+      PacMap_3: 5539068914564409722
+      PacMap_4: -5037206393306007928
+      PacMap_5: 2488564778540862959
+      PacMap_6: 6661137021291792706
+      PacMap_7: 6848978868774435531
+      PacMap_8: -1938178342735375605
+      PacMap_9: -700470612484491691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
