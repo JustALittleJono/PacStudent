@@ -23,7 +23,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -31,7 +31,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.1428572
+        time: 1
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -52,24 +52,24 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: -8453372839322644852, guid: 695bbf62584da2943a56c7170cebc8f3, type: 3}
-    - time: 0.14285715
+    - time: 0.125
       value: {fileID: 3420481704376314317, guid: 695bbf62584da2943a56c7170cebc8f3, type: 3}
-    - time: 0.2857143
+    - time: 0.25
       value: {fileID: -4448045204729840999, guid: 695bbf62584da2943a56c7170cebc8f3, type: 3}
-    - time: 0.42857143
+    - time: 0.375
       value: {fileID: 832879928610660976, guid: 695bbf62584da2943a56c7170cebc8f3, type: 3}
-    - time: 0.5714286
+    - time: 0.5
       value: {fileID: -6160645492384859920, guid: 695bbf62584da2943a56c7170cebc8f3, type: 3}
-    - time: 0.71428573
+    - time: 0.625
       value: {fileID: 6930328709586337288, guid: 695bbf62584da2943a56c7170cebc8f3, type: 3}
-    - time: 0.85714287
+    - time: 0.75
       value: {fileID: 6965336691639106306, guid: 695bbf62584da2943a56c7170cebc8f3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 7
+  m_SampleRate: 8
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -107,7 +107,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1428572
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -129,7 +129,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -137,7 +137,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.1428572
+        time: 1
         value: 0
         inSlope: Infinity
         outSlope: Infinity

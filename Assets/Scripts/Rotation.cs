@@ -32,6 +32,11 @@ public class Rotation : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.rotation = Quaternion.Euler(0,0,90);
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale =
+                    new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            }
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -45,6 +50,11 @@ public class Rotation : MonoBehaviour
         else if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.rotation = Quaternion.Euler(0,0,-90);
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale =
+                    new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            }
         }
     }
 }

@@ -437,6 +437,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: PacDead_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f72a6c324344c6499a2ab59e4688c17
+      internalID: 1433766137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacDead_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87407702e60f3c246ba229bf69916929
+      internalID: -832072642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -452,6 +494,8 @@ TextureImporter:
       PacDead_1: -9102738044240262931
       PacDead_10: -3598652561056493935
       PacDead_11: -2798809234705134217
+      PacDead_12: 1433766137
+      PacDead_13: -832072642
       PacDead_2: 1809922288907259219
       PacDead_3: -4885334940047125075
       PacDead_4: 143843160

@@ -14,7 +14,6 @@ public class AudioManager : MonoBehaviour
     {
         // Play intro music on game start
         introAudioSource.Play();
-        // Wait for intro music to finish, then start normal ghost music
         StartCoroutine(PlayNormalGhostsMusicAfterIntro());
     }
 

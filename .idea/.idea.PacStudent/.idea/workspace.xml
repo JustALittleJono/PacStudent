@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="411f1503-cc98-45c6-acbc-8b3da0e5c24f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacDead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacDead.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacMonster.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacMonster.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacMonster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacMonster.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacDead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PacDead.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727247390383</updated>
-      <workItem from="1727247394783" duration="2025000" />
+      <workItem from="1727247394783" duration="2905000" />
     </task>
     <servers />
   </component>
