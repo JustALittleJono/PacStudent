@@ -1458,7 +1458,7 @@ Transform:
   m_GameObject: {fileID: 1047763699}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.869896, y: 2.2199464, z: 0.21966743}
+  m_LocalPosition: {x: 6.95, y: 2.19, z: 0.21966743}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2122,6 +2122,7 @@ GameObject:
   - component: {fileID: 1440128625}
   - component: {fileID: 1440128624}
   - component: {fileID: 1440128626}
+  - component: {fileID: 1440128627}
   m_Layer: 0
   m_Name: PacMonster
   m_TagString: Untagged
@@ -2193,8 +2194,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.04, y: 3.89, z: 0.21966743}
-  m_LocalScale: {x: 10, y: 10, z: 0}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1444882247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2220,6 +2221,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1440128627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440128622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0885055e8e9aaf24a9bd48c6ef42f6e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1444882246
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,8 +2262,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1440128625}
   - {fileID: 1574331204}
+  - {fileID: 1440128625}
   - {fileID: 1593411698}
   - {fileID: 302113153}
   - {fileID: 1047763701}
