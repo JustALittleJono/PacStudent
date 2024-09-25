@@ -6,12 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="411f1503-cc98-45c6-acbc-8b3da0e5c24f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacDead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacDead.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacMonster.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacMonster.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacMonster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacMonster.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacDead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PacDead.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacPizza.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacPizza.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacPizza.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacPizza.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacCoin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacCoin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacMap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PacMap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PacMap.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacPizzaSpin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacPizzaSpin.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +24,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelLayout.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2mYJ545DwXWnKNAPLRwJPRIikMa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,7 +42,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Feature-Visual",
+    "git-widget-placeholder": "Dev",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

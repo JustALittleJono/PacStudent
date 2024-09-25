@@ -11,39 +11,6 @@ TextureImporter:
   - first:
       213: -7471029488988740464
     second: PacMap_2
-  - first:
-      213: 5539068914564409722
-    second: PacMap_3
-  - first:
-      213: -5037206393306007928
-    second: PacMap_4
-  - first:
-      213: 2488564778540862959
-    second: PacMap_5
-  - first:
-      213: 6661137021291792706
-    second: PacMap_6
-  - first:
-      213: 6848978868774435531
-    second: PacMap_7
-  - first:
-      213: -1938178342735375605
-    second: PacMap_8
-  - first:
-      213: -700470612484491691
-    second: PacMap_9
-  - first:
-      213: 7767696666620513511
-    second: PacMap_10
-  - first:
-      213: -4258965728668212287
-    second: PacMap_11
-  - first:
-      213: -3126247179624374242
-    second: PacMap_12
-  - first:
-      213: -9135296866814761966
-    second: PacMap_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -86,11 +53,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -204,11 +171,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PacMap_0
+      name: PacMap_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 480
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -228,8 +195,8 @@ TextureImporter:
       name: PacMap_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 480
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -249,8 +216,8 @@ TextureImporter:
       name: PacMap_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 480
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -267,11 +234,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PacMap_3
+      name: PacMap_7
       rect:
         serializedVersion: 2
-        x: 384
-        y: 480
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -279,10 +246,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a79250f94d9bedc40800000000000000
-      internalID: 5539068914564409722
+      spriteID: d09da909c763ca04f9ef7e891ca9f15a
+      internalID: 1497377335
       vertices: []
       indices: 
       edges: []
@@ -291,8 +258,8 @@ TextureImporter:
       name: PacMap_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 352
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -300,178 +267,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8863baa397f381ab0800000000000000
-      internalID: -5037206393306007928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fed0a792b78298220800000000000000
-      internalID: 2488564778540862959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_6
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2490d4224dc117c50800000000000000
-      internalID: 6661137021291792706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_7
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bcaf4736ef57c0f50800000000000000
-      internalID: 6848978868774435531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 556f24f60bd6746f0800000000000000
-      internalID: -700470612484491691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_10
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ecc6e896f66ccb60800000000000000
-      internalID: 7767696666620513511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_11
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c32b281c3d15e4c0800000000000000
-      internalID: -4258965728668212287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e102c62f0c65d94d0800000000000000
-      internalID: -3126247179624374242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacMap_13
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21464c786e7e83180800000000000000
-      internalID: -9135296866814761966
+      spriteID: dec6fbd9adb5b1c4da6643c19d662acf
+      internalID: 987832459
       vertices: []
       indices: 
       edges: []
@@ -479,7 +278,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b60f71c43ae07e04fb37e405b3440073
+    spriteID: 7f7119c114f56c04fa3b72f2cb8fa2b7
     internalID: 0
     vertices: []
     indices: 
@@ -487,20 +286,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PacMap_0: 40288921120601639
       PacMap_1: 3196557570712499286
-      PacMap_10: 7767696666620513511
-      PacMap_11: -4258965728668212287
-      PacMap_12: -3126247179624374242
-      PacMap_13: -9135296866814761966
       PacMap_2: -7471029488988740464
-      PacMap_3: 5539068914564409722
-      PacMap_4: -5037206393306007928
-      PacMap_5: 2488564778540862959
-      PacMap_6: 6661137021291792706
-      PacMap_7: 6848978868774435531
-      PacMap_8: -1938178342735375605
-      PacMap_9: -700470612484491691
+      PacMap_3: 40288921120601639
+      PacMap_4: 987832459
+      PacMap_7: 1497377335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
