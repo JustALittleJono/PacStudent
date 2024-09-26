@@ -30,7 +30,7 @@ public class LevelLayout : MonoBehaviour
         { 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0 }
     };
 
-    private Vector2 startPosition = new(-13.5f, 14.5f);
+    private Vector2 startPosition = new(-13.5f, 14f);
     public float tileSize = 1f; 
 
     private List<GameObject> originalTiles = new(); // Store original tiles
@@ -71,7 +71,7 @@ public class LevelLayout : MonoBehaviour
     {
         // Get the width and height of the original quadrant
         float width = (levelMap.GetLength(1) - 1) * tileSize; // Subtract one tile size to remove extra spacing
-        float height = (levelMap.GetLength(0) - 1) * tileSize; // Subtract one tile size to remove extra spacing
+        float height = (levelMap.GetLength(0) - 2) * tileSize; // Subtract two tile size to remove extra spacing
 
         // Top-right (X-axis Mirrored)
         MirrorQuadrant(new Vector2(width, 0), true, false);
