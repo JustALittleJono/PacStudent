@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="411f1503-cc98-45c6-acbc-8b3da0e5c24f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacPizza.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacPizza.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Full Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Full Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ghost_Type.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ghost_Type.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_3.prefab" afterDir="false" />
@@ -13,7 +16,15 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_5.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_6.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_7.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelLayout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelLayout.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Dead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Dead.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Eyes.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Eyes.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ghost.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ghost.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacBone.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PacBone.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PacCounter.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PacCounter.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Pacmap_6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Pacmap_6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Scared.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Scared.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727247390383</updated>
       <workItem from="1727247394783" duration="2905000" />
-      <workItem from="1727320504583" duration="9679000" />
+      <workItem from="1727320504583" duration="15517000" />
     </task>
     <servers />
   </component>

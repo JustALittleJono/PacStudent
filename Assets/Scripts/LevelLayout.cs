@@ -29,14 +29,15 @@ public class LevelLayout : MonoBehaviour
         { 2, 2, 2, 2, 2, 1, 5, 3, 3, 0, 4, 0, 0, 0 },
         { 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0 }
     };
-
-    private Vector2 startPosition = new(-13.5f, 14.5f);
-    public float tileSize = 1f; 
+    public float tileSize = 1f;
+    private Vector2 startPosition;
+     
 
     private List<GameObject> originalTiles = new(); // Store original tiles
 
        private void Start()
     {
+        startPosition = new(-13.5f*tileSize, 14.5f*tileSize);
         // First, create the top-left quadrant (original layout with proper rotations)
         CreateQuadrant(Vector2.zero);
 
