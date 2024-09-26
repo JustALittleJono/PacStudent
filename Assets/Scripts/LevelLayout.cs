@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class LevelLayout : MonoBehaviour
 {
+    public GameObject fullMap;
     public GameObject outsideCornerPrefab;
     public GameObject outsideWallPrefab;
     public GameObject insideCornerPrefab;
@@ -37,6 +38,8 @@ public class LevelLayout : MonoBehaviour
 
        private void Start()
     {
+        fullMap.SetActive(false); // deactivate the manual map
+        
         // First, create the top-left quadrant (original layout with proper rotations)
         CreateQuadrant(Vector2.zero);
 

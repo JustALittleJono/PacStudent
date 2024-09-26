@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputManager : MonoBehaviour
+public class MovementManager : MonoBehaviour
 {
     [SerializeField] private GameObject item;
     private List<GameObject> itemList = new List<GameObject>();
-
+    private int i;
     private Tweener tweener;
     // Start is called before the first frame update
     void Start()
@@ -22,31 +22,30 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                GameObject newItem = Instantiate(item, new Vector3(0, 0.5f, 0), Quaternion.identity);
-                itemList.Add(newItem);
-            }
-
             Vector3 movement = Vector3.zero;
 
-            if (Input.GetKeyDown(KeyCode.A))
+            switch (i)
             {
-                movement = new Vector3(-2.0f, 0.5f, 0.0f); // Move left
-            }
-            else if (Input.GetKeyDown(KeyCode.D))
-            {
-                movement = new Vector3(2.0f, 0.5f, 0.0f); // Move right
-            }
-            else if (Input.GetKeyDown(KeyCode.S))
-            {
-                movement = new Vector3(0.0f, 0.5f, -2.0f); // Move backward
-            }
-            else if (Input.GetKeyDown(KeyCode.W))
-            {
-                movement = new Vector3(0.0f, 0.5f, 2.0f); // Move forward
-            }
-
+                case 1:
+                    movement = new Vector3(-12.5f, 13f, 0.0f); // Move left
+                    break;
+                case 2:
+                {
+                    movement = new Vector3(-7.5f, 13f, 0.0f); // Move right
+                    break;
+                }
+                case 3:
+                {
+                    movement = new Vector3(-7.5f, 9f, 0.0f); // Move backward
+                    break;
+                }
+                case 4:
+                {
+                    movement = new Vector3(-12.5f, 9f, 0.0f); // Move forward
+                    i = 0;
+                    break;
+                }
+            } i++;
 
             if (movement != Vector3.zero)
             {
@@ -59,5 +58,10 @@ public class InputManager : MonoBehaviour
                     }
                 }
             }
+    }
+
+    void moveRight()
+    {
+        movement = new Vector3(-12.5f, 13f, 0.0f);
     }
 }
