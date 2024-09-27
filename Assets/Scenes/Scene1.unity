@@ -4168,6 +4168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 1440128622}
+  moveSpeed: 0
 --- !u!114 &1512058769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4180,7 +4181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bcfe9e1221c314e8a0e4b4b0b84342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0
+  distance: 1
 --- !u!1 &1574331203
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,93 +5,91 @@ using UnityEngine;
 
 public class MovementManager : MonoBehaviour
 {
-    [SerializeField] private GameObject item;
+    [SerializeField] private GameObject item; // Object to move
     private List<GameObject> itemList = new List<GameObject>();
-    private int i = 1;
     private Tweener tweener;
     private Vector3 movement;
     private Rotation itemRotation;
+
+    public float moveSpeed = 2f; // Speed for movement
+    private Vector3 direction; // Current movement direction (left, right, up, down)
+
     // Start is called before the first frame update
     void Start()
     {
         tweener = GetComponent<Tweener>();
-        if (item is not null)
+
+        if (item != null)
         {
             itemList.Add(item);
             itemRotation = item.GetComponent<Rotation>();
         }
+
+        direction = Vector3.left; // Initial movement direction (left)
+        itemRotation.rotateLeft(); // Start facing left
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (item.transform.position == new Vector3(-7.5f, 13f,transform.position.z))
-        {
-            i = 1;
-        }
-        else if (item.transform.position == new Vector3(-12.5f, 13f,transform.position.z))
-        {
-            i = 2;
-        }
-        else if (item.transform.position == new Vector3(-12.5f, 9.0f, transform.position.z))
-        {
-            i = 3;
-        }
-        else if (item.transform.position == new Vector3(-7.5f, 9.0f,transform.position.z))
-        {
-            i = 4;
-        }
+        // HandleInput(); // keyboard inputs to change direction
 
-        switch (i)
-        {
-            case 1:
-                moveLeft();
-                break;
-            case 2:
-                moveDown();
-                break;
+        // Move the item based on the current direction
+        movement = direction * moveSpeed * Time.deltaTime;
+        item.transform.position += movement;
 
-            case 3:
-                moveRight();
-                break;
-
-            case 4:
-                moveUp();
-                break;
-        }
-
-        if (movement != Vector3.zero)
-        {
-            foreach (GameObject obj in itemList)
-            {
-                bool tweenAdded = tweener.AddTween(obj.transform, obj.transform.position, movement, 1.5f);
-                if (tweenAdded)
-                {
-                    break;
-                }
-            }
-        }
+        // Here you can add a condition to check when to change direction, e.g., reaching a boundary or point
+        CheckBoundaryOrCondition();
     }
 
-    void moveLeft()
+    // Handle keyboard input for changing direction
+    // void HandleInput()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.LeftArrow))
+    //     {
+    //         direction = Vector3.left;
+    //         itemRotation.rotateLeft();
+    //     }
+    //     else if (Input.GetKeyDown(KeyCode.RightArrow))
+    //     {
+    //         direction = Vector3.right;
+    //         itemRotation.rotateRight();
+    //     }
+    //     else if (Input.GetKeyDown(KeyCode.UpArrow))
+    //     {
+    //         direction = Vector3.up;
+    //         itemRotation.rotateUp();
+    //     }
+    //     else if (Input.GetKeyDown(KeyCode.DownArrow))
+    //     {
+    //         direction = Vector3.down;
+    //         itemRotation.rotateDown();
+    //     }
+    // }
+
+    // Check for conditions like hitting boundaries, walls, or other triggers to change direction
+    void CheckBoundaryOrCondition()
     {
-        movement = new Vector3(item.transform.position.x-1.0f, item.transform.position.y,item.transform.position.z);
-        itemRotation.rotateLeft();
+        // Example: If the object hits a boundary, change direction
+        if (item.transform.position is { x: <= -12.5f, y: >= 9f })
+        {
+            direction = Vector3.down; // Change direction to down
+            itemRotation.rotateDown();
+        }
+        else if (item.transform.position is { x: >= -7.5f, y: <= 13f })
+        {
+            direction = Vector3.up; // Change direction to up
+            itemRotation.rotateUp();
+        }
+        else if (item.transform.position.y >= 13f)
+        {
+            direction = Vector3.left; // Change direction to left
+            itemRotation.rotateLeft();
+        }
+        else if (item.transform.position is { y: <= 9f, x: <= -7.5f })
+        {
+            direction = Vector3.right; // Change direction to right
+            itemRotation.rotateRight();
+        }
     }
-    void moveDown()
-    {
-        movement = new Vector3(item.transform.position.x, item.transform.position.y-1.0f,item.transform.position.z);
-        itemRotation.rotateDown();
-    }
-    void moveRight()
-    {
-        movement = new Vector3(item.transform.position.x+1.0f, item.transform.position.y,item.transform.position.z);
-        itemRotation.rotateRight();
-    }
-    void moveUp()
-    {
-        movement = new Vector3(item.transform.position.x, item.transform.position.y-1.0f,item.transform.position.z);
-        itemRotation.rotateUp();
-    }
-    
 }
