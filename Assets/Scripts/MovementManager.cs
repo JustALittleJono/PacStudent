@@ -11,7 +11,7 @@ public class MovementManager : MonoBehaviour
     private Vector3 movement;
     private Rotation itemRotation;
 
-    public float moveSpeed = 2f; // Speed for movement
+    public float moveSpeed = 4f; // Speed for movement
     private Vector3 direction; // Current movement direction (left, right, up, down)
 
     // Start is called before the first frame update
