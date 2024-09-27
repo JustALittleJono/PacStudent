@@ -14,38 +14,34 @@ public class LevelGenerator : MonoBehaviour
     public GameObject powerPelletPrefab;
     public GameObject tJunctionPrefab;
     public GameObject quadrantParentPrefab;
-
-    private float tileSize = 1f;  // Tile size
     [SerializeField] Vector2 startPosition; // Starting position of the quadrant
 
     // The level layout map (2D array)
     private readonly int[,] levelMap =
     {
-        { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4 },
-        { 2, 6, 4, 0, 0, 4, 5, 4, 0, 0, 0, 4, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 3, 5, 3, 4, 4, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 4, 4, 5, 3, 4, 4, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5, 4 },
-        { 1, 2, 2, 2, 2, 1, 5, 4, 3, 4, 4, 3, 0, 4 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 3, 4, 4, 3, 0, 3 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 0, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 3, 4, 4, 0 },
-        { 2, 2, 2, 2, 2, 1, 5, 3, 3, 0, 4, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0 }
+        {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
+        {2,5,5,5,5,5,5,5,5,5,5,5,5,4},
+        {2,5,3,4,4,3,5,3,4,4,4,3,5,4},
+        {2,6,4,0,0,4,5,4,0,0,0,4,5,4},
+        {2,5,3,4,4,3,5,3,4,4,4,3,5,3},
+        {2,5,5,5,5,5,5,5,5,5,5,5,5,5},
+        {2,5,3,4,4,3,5,3,3,5,3,4,4,4},
+        {2,5,3,4,4,3,5,4,4,5,3,4,4,3},
+        {2,5,5,5,5,5,5,4,4,5,5,5,5,4},
+        {1,2,2,2,2,1,5,4,3,4,4,3,0,4},
+        {0,0,0,0,0,2,5,4,3,4,4,3,0,3},
+        {0,0,0,0,0,2,5,4,4,0,0,0,0,0},
+        {0,0,0,0,0,2,5,4,4,0,3,4,4,0},
+        {2,2,2,2,2,1,5,3,3,0,4,0,0,0},
+        {0,0,0,0,0,0,5,0,0,0,4,0,0,0},
     };
 
     private List<GameObject> originalTiles = new(); // Store original tiles
 
     private void Awake()
     {
-        transform.localScale = new Vector3(tileSize,tileSize,tileSize);
         // Disable "Full Map" on awake
-        startPosition = new Vector2(-13.5f * tileSize, 14f * tileSize);
+        startPosition = new Vector2(-13.5f, 14f);
         Transform fullMap = transform.Find("Full Map"); 
         if (fullMap != null)
             fullMap.gameObject.SetActive(false);
@@ -72,7 +68,7 @@ public class LevelGenerator : MonoBehaviour
         {
             for (int x = 0; x < levelMap.GetLength(1); x++)
             {
-                Vector2 position = startPosition + new Vector2(x * tileSize, -y * tileSize) + offset;
+                Vector2 position = startPosition + new Vector2(x, -y) + offset;
                 int tileType = levelMap[y, x];
 
                 GameObject tilePrefab = GetPrefabForTile(tileType);
@@ -122,17 +118,17 @@ public class LevelGenerator : MonoBehaviour
     {
         // Duplicate and Scale X axis -1
         GameObject secondQuadrant = Instantiate(firstQuadrantParent, Vector3.zero, Quaternion.identity, transform);
-        secondQuadrant.transform.localScale = new Vector3(-1, 1, 1); // Mirror on X axis
+        secondQuadrant.transform.rotation = Quaternion.Euler(180, 0, 0); // Mirror on X axis
         secondQuadrant.name = "SecondQuadrant";
 
         // Duplicate and Scale  Y axis -1
-        GameObject thirdQuadrant = Instantiate(firstQuadrantParent, Vector3.zero, Quaternion.identity, transform);
-        thirdQuadrant.transform.localScale = new Vector3(1, -1, 1); // Mirror on Y axis
+        GameObject thirdQuadrant = Instantiate(firstQuadrantParent,Vector3.zero, Quaternion.identity, transform);
+        thirdQuadrant.transform.rotation = Quaternion.Euler(0, 180, 0); // Mirror on Y axis
         thirdQuadrant.name = "ThirdQuadrant";
 
         // Duplicate and Scale X, Y axis -1
-        GameObject fourthQuadrant = Instantiate(firstQuadrantParent, Vector3.zero, Quaternion.identity, transform);
-        fourthQuadrant.transform.localScale = new Vector3(-1, -1, 1); // Mirror on both X and Y axes
+        GameObject fourthQuadrant = Instantiate(firstQuadrantParent,Vector3.zero, Quaternion.identity, transform);
+        fourthQuadrant.transform.rotation = Quaternion.Euler(180, 180, 0); // Mirror on both X and Y axes
         fourthQuadrant.name = "FourthQuadrant";
     }
 
@@ -157,7 +153,7 @@ public class LevelGenerator : MonoBehaviour
         int leftNeighbor = -1;
         int aboveNeighbor = -1;
         int belowNeighbor = -1;
-        var position = startPosition + new Vector2(x * tileSize, -y * tileSize);
+        var position = startPosition + new Vector2(x, -y);
 
         if (x + 1 < levelMap.GetLength(1))
         {
