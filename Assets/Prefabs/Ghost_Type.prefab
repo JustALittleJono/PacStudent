@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 4663386014768553494}
   - component: {fileID: 478816850180638265}
   - component: {fileID: 5740995051998885138}
+  - component: {fileID: 5302830253680115295}
   m_Layer: 0
   m_Name: Ghost_Color
   m_TagString: Untagged
@@ -218,6 +219,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5302830253680115295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5892793694945319604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a5d6150637a5a489237a3862b4ac41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5179101812426098040}
+  animator2: {fileID: 5740995051998885138}
 --- !u!1 &9075235828193628127
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +242,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4598955334352090355}
-  - component: {fileID: -5428707645676286821}
   m_Layer: 0
   m_Name: Ghost_Type
   m_TagString: Untagged
@@ -252,17 +266,3 @@ Transform:
   - {fileID: 5650095989524186685}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5428707645676286821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9075235828193628127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a5d6150637a5a489237a3862b4ac41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5179101812426098040}
-  animator2: {fileID: 5740995051998885138}
