@@ -5,22 +5,9 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    //[SerializeField] private GameObject pacMonster;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void rotateLeft()
     {
+        //reset rotation
         transform.rotation = Quaternion.identity;
         if (transform.localScale.x < 0)
         {

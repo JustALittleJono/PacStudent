@@ -20,16 +20,19 @@ public class Tweener : MonoBehaviour
         for (int i = 0; i < activeTweens.Count; i++)
         {
             Tween activeTween = activeTweens[i];
+            // Calculate distance and time
             float totalDistance = Vector3.Distance(activeTween.StartPos, activeTween.EndPos);
             float elapsedTime = Time.time - activeTween.StartTime;
             float fractionOfJourney = elapsedTime / activeTween.Duration;
             float currentDistance = Vector3.Distance(activeTween.Target.position, activeTween.EndPos);
             if (currentDistance > 0.1f)
             {
+                // Update position
                 activeTween.Target.position = Vector3.Lerp(activeTween.StartPos, activeTween.EndPos, fractionOfJourney);
             }
             else
             {
+                // Finish tween
                 activeTween.Target.position = activeTween.EndPos;
                 activeTweens.RemoveAt(i);
             }
