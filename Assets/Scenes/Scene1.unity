@@ -294,7 +294,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.4
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1696,6 +1696,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4331977626470541821, guid: 2d32def6e9c6a9f40a2659b650c8d7ba, type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349306913693510217, guid: 2d32def6e9c6a9f40a2659b650c8d7ba, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349306913693510217, guid: 2d32def6e9c6a9f40a2659b650c8d7ba, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349306913693510217, guid: 2d32def6e9c6a9f40a2659b650c8d7ba, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349306913693510217, guid: 2d32def6e9c6a9f40a2659b650c8d7ba, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4354588854346596062, guid: 2d32def6e9c6a9f40a2659b650c8d7ba, type: 3}
@@ -3892,6 +3908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701a0cce147353d4b933b9fef03eddbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameCamera: {fileID: 485172775}
   outsideCornerPrefab: {fileID: 1039346156114851123, guid: 7da10f70a93013a4cbc9c598f191c190, type: 3}
   outsideWallPrefab: {fileID: 1414920540206314059, guid: 07cd1fa53bc04434f9a73f97d0fa19ba, type: 3}
   insideCornerPrefab: {fileID: 1644860857221877672, guid: e093aa0d884bfc341bc1d43cdd465d4d, type: 3}
@@ -3900,7 +3917,7 @@ MonoBehaviour:
   powerPelletPrefab: {fileID: 6386806527570339118, guid: 9d66cf6e0fa47e343a10619409ccbb39, type: 3}
   tJunctionPrefab: {fileID: 1721307045853073328, guid: 5f9a253f6a3c09c4fad3923348dc484e, type: 3}
   quadrantParentPrefab: {fileID: 9037318204538599825, guid: d4773fe15175b264f8ed9d960305d0a4, type: 3}
-  tileSize: 1
+  tileSize: 0.5
   startPosition: {x: -13.5, y: 14}
 --- !u!1 &1422685764
 GameObject:
