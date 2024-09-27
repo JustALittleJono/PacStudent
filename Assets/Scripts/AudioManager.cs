@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     
     void Start()
     {
-        // Play intro music on game start
+        // Play intro music
         introAudioSource.Play();
         StartCoroutine(PlayNormalGhostsMusicAfterIntro());
     }
@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
     
     void Update()
     {
-        // Check if any key is pressed and if intro music is still playing
+        // Skip intro if key pressed
         if (Input.anyKeyDown && introPlaying)
         {
             SkipIntro();
@@ -30,11 +30,11 @@ public class AudioManager : MonoBehaviour
     
     void SkipIntro()
     {
-        // Stop the intro music immediately
+        // Stop intro music
         introAudioSource.Stop();
         introPlaying = false;
 
-        // Start playing the normal ghost music
+        // Play normal ghost music
         normalGhostsAudioSource.Play();
     }
     

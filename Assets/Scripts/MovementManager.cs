@@ -17,6 +17,7 @@ public class MovementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Initialize tweener and rotation
         tweener = GetComponent<Tweener>();
 
         if (item != null)
@@ -38,8 +39,8 @@ public class MovementManager : MonoBehaviour
         movement = direction * moveSpeed * Time.deltaTime;
         item.transform.position += movement;
 
-        // Here you can add a condition to check when to change direction, e.g., reaching a boundary or point
-        CheckBoundaryOrCondition();
+        // Condition for direction change
+        CheckCondition();
     }
 
     // Handle keyboard input for changing direction
@@ -67,8 +68,8 @@ public class MovementManager : MonoBehaviour
     //     }
     // }
 
-    // Check for conditions like hitting boundaries, walls, or other triggers to change direction
-    void CheckBoundaryOrCondition()
+    // Check for conditions
+    void CheckCondition()
     {
         // Example: If the object hits a boundary, change direction
         if (item.transform.position is { x: <= -12.5f, y: >= 9f })
