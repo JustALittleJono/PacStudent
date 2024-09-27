@@ -24,7 +24,6 @@ public class Tweener : MonoBehaviour
             float elapsedTime = Time.time - activeTween.StartTime;
             float fractionOfJourney = elapsedTime / activeTween.Duration;
             float currentDistance = Vector3.Distance(activeTween.Target.position, activeTween.EndPos);
-            fractionOfJourney = Mathf.Pow(fractionOfJourney, 3);
             if (currentDistance > 0.1f)
             {
                 activeTween.Target.position = Vector3.Lerp(activeTween.StartPos, activeTween.EndPos, fractionOfJourney);
