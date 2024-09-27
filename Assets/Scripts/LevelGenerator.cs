@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    public Camera gameCamera;  // Reference to the camera
     public GameObject outsideCornerPrefab;
     public GameObject outsideWallPrefab;
     public GameObject insideCornerPrefab;
@@ -13,8 +14,8 @@ public class LevelGenerator : MonoBehaviour
     public GameObject powerPelletPrefab;
     public GameObject tJunctionPrefab;
     public GameObject quadrantParentPrefab;
-    
-    public float tileSize = 1f;  // Tile size
+
+    private float tileSize = 1f;  // Tile size
     [SerializeField] Vector2 startPosition; // Starting position of the quadrant
 
     // The level layout map (2D array)
@@ -25,6 +26,7 @@ public class LevelGenerator : MonoBehaviour
         { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4 },
         { 2, 6, 4, 0, 0, 4, 5, 4, 0, 0, 0, 4, 5, 4 },
         { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 3 },
+        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
         { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
         { 2, 5, 3, 4, 4, 3, 5, 3, 3, 5, 3, 4, 4, 4 },
         { 2, 5, 3, 4, 4, 3, 5, 4, 4, 5, 3, 4, 4, 3 },
@@ -41,26 +43,27 @@ public class LevelGenerator : MonoBehaviour
 
     private void Awake()
     {
-        // Initialize startPosition
+        transform.localScale = new Vector3(tileSize,tileSize,tileSize);
+        // Disable "Full Map" on awake
         startPosition = new Vector2(-13.5f * tileSize, 14f * tileSize);
         Transform fullMap = transform.Find("Full Map"); 
-        if (fullMap is not null)
+        if (fullMap != null)
             fullMap.gameObject.SetActive(false);
     }
 
     void Start()
     {
-        // Create the first quadrant
+        // Create and mirror quadrants
         GameObject firstQuadrantParent = CreateQuadrant(Vector2.zero, "FirstQuadrant");
-
-        // Duplicate and mirror for the other quadrants
         CreateMirroredQuadrants(firstQuadrantParent);
+        
+        // Adjust camera after generating the level
+        AdjustCameraToLevelSize();
     }
 
-    // Store the first quadrant under a parent GameObject
+    // Create the first quadrant and store it under a parent GameObject
     GameObject CreateQuadrant(Vector2 offset, string quadrantName)
     {
-        // Create a new empty GameObject to act as the parent for this quadrant
         GameObject quadrantParent = Instantiate(quadrantParentPrefab, Vector3.zero, Quaternion.identity, transform);
         quadrantParent.name = quadrantName;
 
@@ -75,14 +78,43 @@ public class LevelGenerator : MonoBehaviour
                 GameObject tilePrefab = GetPrefabForTile(tileType);
                 if (tilePrefab == null) continue;
 
-                // Instantiate the tile and parent it to the quadrant
                 GameObject tileInstance = Instantiate(tilePrefab, position, Quaternion.identity, quadrantParent.transform);
-
-                // Apply rotations based on tile type
-                ApplyRotation(tileInstance, tileType, x, y);
+                ApplyRotation(tileInstance, tileType, x, y); // Apply rotation logic
             }
         }
+
         return quadrantParent;
+    }
+
+    // Adjust the camera to fit the level
+    void AdjustCameraToLevelSize()
+    {
+        // Calculate bounds of the entire level
+        Bounds levelBounds = CalculateLevelBounds();
+
+        // Center the camera on the level
+        Vector3 levelCenter = levelBounds.center;
+        gameCamera.transform.position = new Vector3(levelCenter.x, levelCenter.y, gameCamera.transform.position.z);
+
+        // Adjust camera size to fit the entire level
+        float levelHeight = levelBounds.size.y;
+        float levelWidth = levelBounds.size.x;
+        float screenAspect = Screen.width / (float)Screen.height;
+        float cameraHeight = levelHeight / 2;
+        float cameraWidth = levelWidth / (2 * screenAspect);
+        gameCamera.orthographicSize = Mathf.Max(cameraHeight, cameraWidth);
+    }
+
+    // Calculate the bounds of the level based on the generated tiles
+    Bounds CalculateLevelBounds()
+    {
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        Bounds bounds = new Bounds(renderers[0].bounds.center, Vector3.zero);
+        foreach (Renderer r in renderers)
+        {
+            bounds.Encapsulate(r.bounds);
+        }
+        return bounds;
     }
 
     // Mirror the first quadrant to create the other quadrants
