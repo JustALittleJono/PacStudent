@@ -48,7 +48,7 @@ AnimatorStateMachine:
     m_Position: {x: 380, y: 90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5112735617823905819}
-    m_Position: {x: 540, y: 230, z: 0}
+    m_Position: {x: 550, y: 230, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 5416646333464152392}
@@ -128,7 +128,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PacDead
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8978497188737678482}

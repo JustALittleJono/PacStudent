@@ -6,9 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="411f1503-cc98-45c6-acbc-8b3da0e5c24f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Full Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Full Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ghost_Type.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ghost_Type.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_6.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PacMap_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PacMap_7.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GhostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GhostController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +46,7 @@
   &quot;keyToString&quot;: {
     &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature-LevelGenerator&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
