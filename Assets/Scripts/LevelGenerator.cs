@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class LevelLayout : MonoBehaviour
+public class LevelGenerator : MonoBehaviour
 {
-    public GameObject fullMap;
+    public Camera gameCamera;  // Reference to the camera
     public GameObject outsideCornerPrefab;
     public GameObject outsideWallPrefab;
     public GameObject insideCornerPrefab;
@@ -13,115 +13,127 @@ public class LevelLayout : MonoBehaviour
     public GameObject pelletPrefab;
     public GameObject powerPelletPrefab;
     public GameObject tJunctionPrefab;
+    public GameObject quadrantParentPrefab;
+    [SerializeField] Vector2 startPosition; // Starting position of the quadrant
 
+    // The level layout map (2D array)
     private readonly int[,] levelMap =
     {
-        { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4 },
-        { 2, 6, 4, 0, 0, 4, 5, 4, 0, 0, 0, 4, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 3, 5, 3, 4, 4, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 4, 4, 5, 3, 4, 4, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5, 4 },
-        { 1, 2, 2, 2, 2, 1, 5, 4, 3, 4, 4, 3, 0, 4 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 3, 4, 4, 3, 0, 3 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 0, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 3, 4, 4, 0 },
-        { 2, 2, 2, 2, 2, 1, 5, 3, 3, 0, 4, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0 }
+        {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
+        {2,5,5,5,5,5,5,5,5,5,5,5,5,4},
+        {2,5,3,4,4,3,5,3,4,4,4,3,5,4},
+        {2,6,4,0,0,4,5,4,0,0,0,4,5,4},
+        {2,5,3,4,4,3,5,3,4,4,4,3,5,3},
+        {2,5,5,5,5,5,5,5,5,5,5,5,5,5},
+        {2,5,3,4,4,3,5,3,3,5,3,4,4,4},
+        {2,5,3,4,4,3,5,4,4,5,3,4,4,3},
+        {2,5,5,5,5,5,5,4,4,5,5,5,5,4},
+        {1,2,2,2,2,1,5,4,3,4,4,3,0,4},
+        {0,0,0,0,0,2,5,4,3,4,4,3,0,3},
+        {0,0,0,0,0,2,5,4,4,0,0,0,0,0},
+        {0,0,0,0,0,2,5,4,4,0,3,4,4,0},
+        {2,2,2,2,2,1,5,3,3,0,4,0,0,0},
+        {0,0,0,0,0,0,5,0,0,0,4,0,0,0},
     };
-
-    private Vector2 startPosition = new(-13.5f, 14f);
-    public float tileSize = 1f; 
 
     private List<GameObject> originalTiles = new(); // Store original tiles
 
-       private void Start()
+    private void Awake()
     {
-        fullMap.SetActive(false); // deactivate the manual map
-        
-        // First, create the top-left quadrant (original layout with proper rotations)
-        CreateQuadrant(Vector2.zero);
-
-        // Now, mirror the quadrant to create the other quadrants
-        MirrorQuadrants();
+        // Disable "Full Map" on awake
+        startPosition = new Vector2(-13.5f, 14f);
+        Transform fullMap = transform.Find("Full Map"); 
+        if (fullMap != null)
+            fullMap.gameObject.SetActive(false);
     }
 
-    private void CreateQuadrant(Vector2 offset)
+    void Start()
     {
-        for (var y = 0; y < levelMap.GetLength(0); y++)
+        // Create and mirror quadrants
+        GameObject firstQuadrantParent = CreateQuadrant(Vector2.zero, "FirstQuadrant");
+        CreateMirroredQuadrants(firstQuadrantParent);
+        
+        // Adjust camera after generating the level
+        AdjustCameraToLevelSize();
+    }
+
+    // Create the first quadrant and store it under a parent GameObject
+    GameObject CreateQuadrant(Vector2 offset, string quadrantName)
+    {
+        GameObject quadrantParent = Instantiate(quadrantParentPrefab, Vector3.zero, Quaternion.identity, transform);
+        quadrantParent.name = quadrantName;
+
+        // Loop through the level map and instantiate the tiles
+        for (int y = 0; y < levelMap.GetLength(0); y++)
         {
-            for (var x = 0; x < levelMap.GetLength(1); x++)
+            for (int x = 0; x < levelMap.GetLength(1); x++)
             {
-                Vector2 position = startPosition + new Vector2(x * tileSize, -y * tileSize) + offset;
+                Vector2 position = startPosition + new Vector2(x, -y) + offset;
                 int tileType = levelMap[y, x];
 
                 GameObject tilePrefab = GetPrefabForTile(tileType);
                 if (tilePrefab == null) continue;
 
-                GameObject tileInstance = Instantiate(tilePrefab, position, Quaternion.identity, transform);
-
-                // Apply rotation based on neighbors for the original quadrant
-                ApplyRotation(tileInstance, tileType, x, y);
-
-                // Store the original tile for later mirroring
-                originalTiles.Add(tileInstance);
+                GameObject tileInstance = Instantiate(tilePrefab, position, Quaternion.identity, quadrantParent.transform);
+                ApplyRotation(tileInstance, tileType, x, y); // Apply rotation logic
             }
         }
+
+        return quadrantParent;
     }
 
-    private void MirrorQuadrants()
+    // Adjust the camera to fit the level
+    void AdjustCameraToLevelSize()
     {
-        // Get the width and height of the original quadrant
-        float width = (levelMap.GetLength(1) - 1) * tileSize; // Subtract one tile size to remove extra spacing
-        float height = (levelMap.GetLength(0) - 2) * tileSize; // Subtract two tile size to remove extra spacing
+        // Calculate bounds of the entire level
+        Bounds levelBounds = CalculateLevelBounds();
 
-        // Top-right (X-axis Mirrored)
-        MirrorQuadrant(new Vector2(width, 0), true, false);
+        // Center the camera on the level
+        Vector3 levelCenter = levelBounds.center;
+        gameCamera.transform.position = new Vector3(levelCenter.x, levelCenter.y, gameCamera.transform.position.z);
 
-        // Bottom-left (Y-axis Mirrored)
-        MirrorQuadrant(new Vector2(0, -height), false, true);
-
-        // Bottom-right (X and Y-axis Mirrored)
-        MirrorQuadrant(new Vector2(width, -height), true, true);
+        // Adjust camera size to fit the entire level
+        float levelHeight = levelBounds.size.y;
+        float levelWidth = levelBounds.size.x;
+        float screenAspect = Screen.width / (float)Screen.height;
+        float cameraHeight = levelHeight / 2;
+        float cameraWidth = levelWidth / (2 * screenAspect);
+        gameCamera.orthographicSize = Mathf.Max(cameraHeight, cameraWidth);
     }
 
-    private void MirrorQuadrant(Vector2 offset, bool mirrorX, bool mirrorY)
+    // Calculate the bounds of the level based on the generated tiles
+    Bounds CalculateLevelBounds()
     {
-        foreach (GameObject tile in originalTiles)
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        Bounds bounds = new Bounds(renderers[0].bounds.center, Vector3.zero);
+        foreach (Renderer r in renderers)
         {
-            // Get the position of the original tile
-            Vector2 originalPosition = tile.transform.position;
-
-            // Calculate the mirrored position based on the X and Y axes
-            float mirroredX = mirrorX ? -originalPosition.x + 2 * startPosition.x + (levelMap.GetLength(1)) * tileSize : originalPosition.x;
-            float mirroredY = mirrorY ? -originalPosition.y + 2 * startPosition.y - (levelMap.GetLength(0)) * tileSize : originalPosition.y;
-            Vector2 mirroredPosition = new Vector2(mirroredX, mirroredY) + offset;
-
-            // Apply the correct mirrored rotation based on the axes
-            Quaternion mirroredRotation = tile.transform.rotation;
-
-            if (mirrorX && mirrorY)
-            {
-                mirroredRotation *= Quaternion.Euler(0, 0, 180);  // Flip both X and Y (rotate 180 degrees)
-            }
-            else if (mirrorX)
-            {
-                mirroredRotation *= Quaternion.Euler(0, 180, 0);  // Flip along X (horizontal flip)
-            }
-            else if (mirrorY)
-            {
-                mirroredRotation *= Quaternion.Euler(180, 0, 0);  // Flip along Y (vertical flip)
-            }
-
-            // Instantiate the mirrored version of the tile with the mirrored position and rotation
-            Instantiate(tile.gameObject, mirroredPosition, mirroredRotation, transform);
+            bounds.Encapsulate(r.bounds);
         }
+        return bounds;
     }
 
-    private GameObject GetPrefabForTile(int tileType)
+    // Mirror the first quadrant to create the other quadrants
+    void CreateMirroredQuadrants(GameObject firstQuadrantParent)
+    {
+        // Duplicate and Scale X axis -1
+        GameObject secondQuadrant = Instantiate(firstQuadrantParent, Vector3.zero, Quaternion.identity, transform);
+        secondQuadrant.transform.rotation = Quaternion.Euler(180, 0, 0); // Mirror on X axis
+        secondQuadrant.name = "SecondQuadrant";
+
+        // Duplicate and Scale  Y axis -1
+        GameObject thirdQuadrant = Instantiate(firstQuadrantParent,Vector3.zero, Quaternion.identity, transform);
+        thirdQuadrant.transform.rotation = Quaternion.Euler(0, 180, 0); // Mirror on Y axis
+        thirdQuadrant.name = "ThirdQuadrant";
+
+        // Duplicate and Scale X, Y axis -1
+        GameObject fourthQuadrant = Instantiate(firstQuadrantParent,Vector3.zero, Quaternion.identity, transform);
+        fourthQuadrant.transform.rotation = Quaternion.Euler(180, 180, 0); // Mirror on both X and Y axes
+        fourthQuadrant.name = "FourthQuadrant";
+    }
+
+    // Retrieve the correct prefab for the given tile type
+    GameObject GetPrefabForTile(int tileType)
     {
         return tileType switch
         {
@@ -141,7 +153,7 @@ public class LevelLayout : MonoBehaviour
         int leftNeighbor = -1;
         int aboveNeighbor = -1;
         int belowNeighbor = -1;
-        var position = startPosition + new Vector2(x * tileSize, -y * tileSize);
+        var position = startPosition + new Vector2(x, -y);
 
         if (x + 1 < levelMap.GetLength(1))
         {

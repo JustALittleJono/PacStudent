@@ -5,43 +5,31 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource introAudioSource;
     public AudioSource normalGhostsAudioSource;
     public AudioSource scaredGhostsAudioSource;
     public AudioSource deadGhostsAudioSource;
-    private bool introPlaying = true;
-    
+    private bool isScared = false;
+    private bool isDead = false;
     void Start()
     {
-        // Play intro music on game start
-        introAudioSource.Play();
-        StartCoroutine(PlayNormalGhostsMusicAfterIntro());
+        // Play intro music
+        normalGhostsAudioSource.Play();
     }
 
     
     void Update()
     {
-        // Check if any key is pressed and if intro music is still playing
-        if (Input.anyKeyDown && introPlaying)
+        if (Input.anyKeyDown && isScared is false && isDead is false)
         {
-            SkipIntro();
+            PlayScaredGhostsMusic();
+            isScared = true;
         }
-    }
-    
-    void SkipIntro()
-    {
-        // Stop the intro music immediately
-        introAudioSource.Stop();
-        introPlaying = false;
-
-        // Start playing the normal ghost music
-        normalGhostsAudioSource.Play();
-    }
-    
-    IEnumerator PlayNormalGhostsMusicAfterIntro()
-    {
-        yield return new WaitForSeconds(introAudioSource.clip.length);
-        normalGhostsAudioSource.Play();
+        else if (Input.anyKeyDown)
+        {
+            PlayDeadGhostsMusic();
+            isScared = false;
+            isDead = true;
+        }
     }
 
     // Call this method when ghosts are in scared state
@@ -49,11 +37,13 @@ public class AudioManager : MonoBehaviour
     {
         normalGhostsAudioSource.Stop();
         scaredGhostsAudioSource.Play();
+        
     }
 
     // Call this method when at least one ghost is dead
     public void PlayDeadGhostsMusic()
     {
+        normalGhostsAudioSource.Stop();
         scaredGhostsAudioSource.Stop();
         deadGhostsAudioSource.Play();
     }

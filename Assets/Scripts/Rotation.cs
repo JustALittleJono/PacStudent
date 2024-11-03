@@ -5,22 +5,32 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    //[SerializeField] private GameObject pacMonster;
+    public Animator animator;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        int facing = animator.GetInteger("Facing");
 
+        switch (facing%4)
+        {
+            case 0:
+                rotateLeft();
+                break;
+            case 1:
+                rotateDown();
+                break;
+            case 2:
+                rotateRight();
+                break;
+            case 3:
+                rotateUp();
+                break;
+        }
     }
 
     public void rotateLeft()
     {
+        //reset rotation
         transform.rotation = Quaternion.identity;
         if (transform.localScale.x < 0)
         {

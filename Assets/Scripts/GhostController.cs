@@ -6,11 +6,12 @@ public class GhostController : MonoBehaviour
 {
     [SerializeField]private Animator animator;
     [SerializeField]private Animator animator2;
-
     void Start()
     {
+        
     }
-
+    
+    //control ghost eyes with arrow keys
     void Update()
     {
         HandleMovement();
@@ -18,30 +19,29 @@ public class GhostController : MonoBehaviour
     
     void HandleMovement()
     {
+        //left
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            animator.SetInteger("Facing", 0); // Left
+            animator.SetInteger("Facing", 0);
             animator2.SetInteger("Facing", 0);
         }
+        // Down
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            animator.SetInteger("Facing", 1); // Down
+            animator.SetInteger("Facing", 1); 
             animator2.SetInteger("Facing", 1);
         }
+        // Right
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            animator.SetInteger("Facing", 2); // Right
+            animator.SetInteger("Facing", 2); 
             animator2.SetInteger("Facing", 2);
         }
+        // Up
         else if (Input.GetKey(KeyCode.UpArrow))
         {
-            animator.SetInteger("Facing", 3); // Up
+            animator.SetInteger("Facing", 3); 
             animator2.SetInteger("Facing", 3);
         }
-    }
-
-    void facing()
-    {
-        
     }
 }
