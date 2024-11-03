@@ -8,8 +8,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource normalGhostsAudioSource;
     public AudioSource scaredGhostsAudioSource;
     public AudioSource deadGhostsAudioSource;
-    private bool introPlaying = true;
-    
+    private bool isScared = false;
+    private bool isDead = false;
     void Start()
     {
         // Play intro music
@@ -19,9 +19,16 @@ public class AudioManager : MonoBehaviour
     
     void Update()
     {
-        if (Input.anyKeyDown && introPlaying)
+        if (Input.anyKeyDown && isScared is false && isDead is false)
         {
-            
+            PlayScaredGhostsMusic();
+            isScared = true;
+        }
+        else if (Input.anyKeyDown)
+        {
+            PlayDeadGhostsMusic();
+            isScared = false;
+            isDead = true;
         }
     }
 
@@ -30,11 +37,13 @@ public class AudioManager : MonoBehaviour
     {
         normalGhostsAudioSource.Stop();
         scaredGhostsAudioSource.Play();
+        
     }
 
     // Call this method when at least one ghost is dead
     public void PlayDeadGhostsMusic()
     {
+        normalGhostsAudioSource.Stop();
         scaredGhostsAudioSource.Stop();
         deadGhostsAudioSource.Play();
     }
