@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="411f1503-cc98-45c6-acbc-8b3da0e5c24f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacStudent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Left.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Right.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Eyes Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Eyes Up.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GhostAnimator_Body.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/GhostAnimator_Body.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GhostAnimator_Eyes.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/GhostAnimator_Eyes.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GhostBob.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/GhostBob.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PacMonster.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacMonster.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/PacMonster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PacMonster.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GhostBorderMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GhostBorderMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GhostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GhostController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +108,7 @@
       <workItem from="1727411845632" duration="9051000" />
       <workItem from="1730354965721" duration="14776000" />
       <workItem from="1730510473723" duration="11337000" />
-      <workItem from="1730602298389" duration="3477000" />
+      <workItem from="1730602298389" duration="3837000" />
     </task>
     <servers />
   </component>

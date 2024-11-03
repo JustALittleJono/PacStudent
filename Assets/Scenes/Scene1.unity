@@ -3637,6 +3637,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1432102035890214455, guid: 5160163b046417f40a4ecf4168aa8415, type: 3}
   m_PrefabInstance: {fileID: 3037670030565032355}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1440128624 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 555945115822951262, guid: 5160163b046417f40a4ecf4168aa8415, type: 3}
+  m_PrefabInstance: {fileID: 3037670030565032355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1444882246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,7 +3817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd62330bc2274aa4284c16276d901de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introAudioSource: {fileID: 1994472392}
   normalGhostsAudioSource: {fileID: 698047402}
   scaredGhostsAudioSource: {fileID: 1143116535}
   deadGhostsAudioSource: {fileID: 1122901786}
@@ -4042,6 +4046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PacMonster
       objectReference: {fileID: 0}
+    - target: {fileID: 3592958775707471709, guid: 5160163b046417f40a4ecf4168aa8415, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1440128624}
     - target: {fileID: 6786350729290286263, guid: 5160163b046417f40a4ecf4168aa8415, type: 3}
       propertyPath: m_LocalScale.x
       value: -6
