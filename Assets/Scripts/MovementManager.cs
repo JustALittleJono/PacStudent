@@ -36,7 +36,7 @@ public class MovementManager : MonoBehaviour
         HandleInput(); // keyboard inputs to change direction
 
         // Move the item based on the current direction
-        movement = direction * moveSpeed * Time.deltaTime;
+        movement =  Time.deltaTime * direction * moveSpeed;
         item.transform.position += movement;
     } 
 
