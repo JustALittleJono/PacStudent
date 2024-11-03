@@ -33,64 +33,35 @@ public class MovementManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // HandleInput(); // keyboard inputs to change direction
+        HandleInput(); // keyboard inputs to change direction
 
         // Move the item based on the current direction
-        movement = direction * moveSpeed * Time.deltaTime;
+        movement =  Time.deltaTime * direction * moveSpeed;
         item.transform.position += movement;
+    } 
 
-        // Condition for direction change
-        CheckCondition();
-    }
-
-    // Handle keyboard input for changing direction
-    // void HandleInput()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.LeftArrow))
-    //     {
-    //         direction = Vector3.left;
-    //         itemRotation.rotateLeft();
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.RightArrow))
-    //     {
-    //         direction = Vector3.right;
-    //         itemRotation.rotateRight();
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.UpArrow))
-    //     {
-    //         direction = Vector3.up;
-    //         itemRotation.rotateUp();
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.DownArrow))
-    //     {
-    //         direction = Vector3.down;
-    //         itemRotation.rotateDown();
-    //     }
-    // }
-
-    // Check for conditions
-    void CheckCondition()
-    {
-        // Example: If the object hits a boundary, change direction
-        if (item.transform.position is { x: <= -12.5f, y: >= 9f })
-        {
-            direction = Vector3.down; // Change direction to down
-            itemRotation.rotateDown();
-        }
-        else if (item.transform.position is { x: >= -7.5f, y: <= 13f })
-        {
-            direction = Vector3.up; // Change direction to up
-            itemRotation.rotateUp();
-        }
-        else if (item.transform.position.y >= 13f)
-        {
-            direction = Vector3.left; // Change direction to left
-            itemRotation.rotateLeft();
-        }
-        else if (item.transform.position is { y: <= 9f, x: <= -7.5f })
-        {
-            direction = Vector3.right; // Change direction to right
-            itemRotation.rotateRight();
-        }
+     //Handle keyboard input for changing direction
+     void HandleInput()
+     {
+         if (Input.GetKeyDown(KeyCode.LeftArrow))
+         {
+             direction = Vector3.left;
+             itemRotation.rotateLeft();
+         }
+         else if (Input.GetKeyDown(KeyCode.RightArrow))
+         {
+             direction = Vector3.right;
+             itemRotation.rotateRight();
+         }
+         else if (Input.GetKeyDown(KeyCode.UpArrow))
+         {
+             direction = Vector3.up;
+             itemRotation.rotateUp();
+         }
+         else if (Input.GetKeyDown(KeyCode.DownArrow))
+         {
+             direction = Vector3.down;
+             itemRotation.rotateDown();
+         }
     }
 }

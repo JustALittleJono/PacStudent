@@ -5,6 +5,29 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
+    public Animator animator;
+
+    void Update()
+    {
+        int facing = animator.GetInteger("Facing");
+
+        switch (facing%4)
+        {
+            case 0:
+                rotateLeft();
+                break;
+            case 1:
+                rotateDown();
+                break;
+            case 2:
+                rotateRight();
+                break;
+            case 3:
+                rotateUp();
+                break;
+        }
+    }
+
     public void rotateLeft()
     {
         //reset rotation
