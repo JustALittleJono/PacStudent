@@ -26,7 +26,7 @@ public class GhostBorderMovement : MonoBehaviour
         StartCoroutine(MoveGhost(ghost4));
 
         // Start coroutine for PacStudent without delay
-        StartCoroutine(MovePacStudentToLeftEdgeThenClockwise(pacStudent));
+        StartCoroutine(MovePacStudent(pacStudent));
     }
 
     IEnumerator MoveGhost(Transform ghost)
@@ -52,7 +52,7 @@ public class GhostBorderMovement : MonoBehaviour
         }
     }
 
-    IEnumerator MovePacStudentToLeftEdgeThenClockwise(Transform pacStudent)
+    IEnumerator MovePacStudent(Transform pacStudent)
     {
         Animator pacStudentAnimator = pacStudent.GetComponent<Animator>();
 

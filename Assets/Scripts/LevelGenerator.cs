@@ -310,4 +310,34 @@ public class LevelGenerator : MonoBehaviour
             }
         }
     }
+
+    public bool IsWalkable(Vector2Int gridPos)
+    {
+        // Check if the grid position is within bounds
+        if (gridPos.x < 0 || gridPos.x >= levelMap.GetLength(1) || gridPos.y < 0 || gridPos.y >= levelMap.GetLength(0))
+        {
+            return false; // Out of bounds
+        }
+
+        // Retrieve the tile type at the specified grid position
+        int tileType = levelMap[gridPos.y, gridPos.x];
+
+        // Define which tile types are walkable
+        return tileType == 0 || tileType == 5 || tileType == 6; // 0: empty space, 5: pellet, 6: power pellet
+    }
+    
+    public bool IsPellet(Vector2Int gridPos)
+    {
+        // Check if the grid position is within bounds
+        if (gridPos.x < 0 || gridPos.x >= levelMap.GetLength(1) || gridPos.y < 0 || gridPos.y >= levelMap.GetLength(0))
+        {
+            return false; // Out of bounds
+        }
+
+        // Retrieve the tile type at the specified grid position
+        int tileType = levelMap[gridPos.y, gridPos.x];
+
+        // Return true if the tile type is a pellet or power pellet
+        return tileType == 5 || tileType == 6; // 5: pellet, 6: power pellet
+    }
 }

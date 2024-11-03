@@ -209,6 +209,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1503866091}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
       value: Red
@@ -758,6 +762,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1503866091}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
       value: Pink
@@ -1537,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1503866091}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
       value: Orange
@@ -2349,6 +2361,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1503866091}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
       value: Teal

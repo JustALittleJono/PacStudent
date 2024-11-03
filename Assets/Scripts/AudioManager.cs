@@ -19,16 +19,15 @@ public class AudioManager : MonoBehaviour
     
     void Update()
     {
-        if (Input.anyKeyDown && isScared is false && isDead is false)
+        if (isScared is false && isDead is false)
         {
             PlayScaredGhostsMusic();
             isScared = true;
         }
-        else if (Input.anyKeyDown)
+        else if (isDead is true)
         {
             PlayDeadGhostsMusic();
             isScared = false;
-            isDead = true;
         }
     }
 
