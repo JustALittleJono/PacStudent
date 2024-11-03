@@ -757,6 +757,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
       value: Orange
@@ -3833,6 +3837,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
       value: Teal
@@ -4855,6 +4863,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
       value: Pink
@@ -5447,6 +5459,14 @@ PrefabInstance:
     - target: {fileID: 5740995051998885138, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823194568955308386, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5892793694945319604, guid: efe68799fa298ab4e8cdf40bb8d7ed00, type: 3}
       propertyPath: m_Name
