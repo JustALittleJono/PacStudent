@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartSceneController : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     public void LoadLevel1()
     {
@@ -14,4 +14,10 @@ public class StartSceneController : MonoBehaviour
     {
         SceneManager.LoadScene("InnovationScene"); // Change name to your actual scene name
     }
+    
+    public void LoadStart()
+    {
+        SceneManager.LoadScene("StartScene"); // Change name to your actual scene name
+    }
+    
 }
